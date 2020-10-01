@@ -97,6 +97,39 @@ form {
   margin: 10px 0;
 }
 
+input.search {
+  padding: 5px;
+  border: 1px solid #616161;
+  border-radius: 3px;
+}
+
+#search-btn,
+#lucky {
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+
+input#search-btn:hover,
+input#lucky:hover {
+  border: 0.5px solid #b3b1b1;
+}
+
+#sentence {
+  color: #616161;
+  font-size: 0.8rem;
+}
+
+span a {
+  color: blue;
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
 footer {
   width: 100%;
   height: 20px;
