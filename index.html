@@ -28,21 +28,44 @@
       </div>
     </header>
     <section id="main">
-      <div>
-        <div id="search-form"></div>
-        <div id="sentence"></div>
-      </div>
+      <div id="center">
+        <div id="google-image">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt=""
+          />
+        </div>
+        <div id="search-form">
+          <form action="#">
+            <input type="text" class="search" placeholder="search" />
+            <div class="buttons">
+              <input id="search-btn" type="submit" value="Google Search" />
+              <input id="Lucky" type="submit" value="I'm Feeling Lucky" />
+            </div>
+          </form>
+        </div>
+        <div id="sentence">
+          <p>
+            <span><a href="#">Watch Now!</a></span> Check out a few new products
+            from Google
+          </p>
+        </div>
+      <!-- </div> -->
     </section>
     <footer>
       <div class="left-side">
-        <div class="footer-item" id="advertising"></div>
-        <div class="footer-item" id="business"></div>
+        <div class="footer-item">
+          <a id="advertising" href="#">Advertising</a>
+        </div>
+        <div class="footer-item" id="business"><a href="#">Business</a></div>
+        <div class="footer-item" id="how-search-works">
+          <a href="#">How Search Works</a>
+        </div>
       </div>
       <div class="right-side">
-        <div class="footer-item" id="how-search-works"></div>
-        <div class="footer-item" id="privacy"></div>
-        <div class="footer-item" id="terms"></div>
-        <div class="footer-item" id="settings"></div>
+        <div class="footer-item" id="privacy"><a href="#">Privacy</a></div>
+        <div class="footer-item" id="terms"><a href="#">Terms</a></div>
+        <div class="footer-item" id="settings"><a href="#">Settings</a></div>
       </div>
     </footer>
   </body>
