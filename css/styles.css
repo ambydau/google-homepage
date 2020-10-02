@@ -98,12 +98,12 @@ form {
   border: 1px solid #f2f2f2;
   background-color: #ffffff;
   border-radius: 25px;
-  -webkit-box-sizing: border-box;
+/*   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: url(/img/65-659285_search-icon-transparent-background-material-design-magnifying-glass.png);
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 10px 13px;
+  background-position: 10px 13px; */
   -webkit-transition: -webkit-box-shadow 0.5s;
   transition: -webkit-box-shadow 0.5s;
   -o-transition: box-shadow 0.5s;
