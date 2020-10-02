@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +16,16 @@ body {
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 ul {
@@ -26,7 +40,11 @@ ul li {
 li a {
   text-decoration: none;
   color: #616161;
+  -webkit-transition: -webkit-text-decoration 0.5s;
+  transition: -webkit-text-decoration 0.5s;
+  -o-transition: text-decoration 0.5s;
   transition: text-decoration 0.5s;
+  transition: text-decoration 0.5s, -webkit-text-decoration 0.5s;
 }
 
 li a:hover {
@@ -34,6 +52,8 @@ li a:hover {
 }
 
 a i {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -46,16 +66,30 @@ a i:hover {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 690px;
 }
 
@@ -64,23 +98,33 @@ form {
   border: 0.7px solid #dfe1e5;
   background-color: #ffffff;
   border-radius: 25px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: url(/img/65-659285_search-icon-transparent-background-material-design-magnifying-glass.png);
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 10px 13px;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
   transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 
 #search:hover {
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  -webkit-box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
   background-image: none;
 }
 
 div#form-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 10px 0;
 }
 
@@ -96,4 +140,3 @@ div#form-btns input {
 footer {
   background-color: #f2f2f2;
 }
-
